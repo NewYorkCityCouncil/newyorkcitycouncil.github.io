@@ -18,8 +18,8 @@
     <div data-sticky-container>
       <header class="site-header sticky"role="header" data-sticky data-margin-top="0" data-sticky-on="small" data-anchor="sticky-wrapper">
         <div class="top-bar" style="background-color: white;">
-          <div class="row" style="margin: 0; width: 100%;">
-            <div class="columns">
+          <div class="row" style="margin: 0; max-width: 100%; width: 100%;">
+            <div class="columns small-12">
               <div class="top-bar-title">
                 <strong class="site-logo">
                   <a href="/">
@@ -29,6 +29,20 @@
                 </strong>
               </div>
             </div>
+          </div>
+        </div>
+        <div id="warning-bar" class="row" style="background-color: #FFF8E1; margin: 0; margin-top:4px; max-width: 100%; width: 100%;">
+          <div class="columns small-1" style="position: relative; text-align:center; padding: 10px 0;">
+            <img id="warning-icon" src="/img/warning.svg" style="fill: #F7C304; margin: 0 auto; width: 50px;"/>
+          </div>
+          <div class="columns small-10" style="position: relative; text-align:center; padding: 10px;">
+            <p id="warning-text" style="font-weight: bold; margin-bottom: 0;">The New York City Council website is currently experiencing some technical difficulties.<br/>
+              While we work to get back online, you can still watch hearings that are being live streamed here.<br/>
+              You can also use our Legistar system at <a href="https://legistar.council.nyc.gov/" target="_blank">https://legistar.council.nyc.gov/</a>
+            </p>
+          </div>
+          <div class="columns small-1" style="position: relative; text-align:center; padding: 10px 0;">
+            <img id="close-warning" src="/img/close.svg" style="cursor: pointer; position: absolute; right: 10px; top: 5px; width: 20px;"/>
           </div>
         </div>
       </header>
@@ -123,7 +137,10 @@
     </main>
   </div>
   <script>
-    $(document).foundation();
+    $(document).ready(function(){
+      $(this).foundation();
+      $("#close-warning").click(function(){$("#warning-bar").hide();});
+    });
   </script>
 </body>
 </html>

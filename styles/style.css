@@ -7468,3 +7468,11 @@ input::placeholder{
 #sticky-wrapper{
     width: 100% !important;
 }
+#warning-text{
+  font-size: 14px;
+}
+@media(max-width: 800px){
+  #warning-text{
+    font-size: 12px;
+  }
+}
