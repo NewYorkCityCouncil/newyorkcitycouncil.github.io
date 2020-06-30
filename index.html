@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"          content="https://council.nyc.gov/>" />
+    <meta property="og:type"         content="website" />
+    <meta property="og:title"        content="New York City Council Livestream Only" />
+    <meta property="og:site_name"    content="New York City Council"/>
+    <meta property="og:description"  content="Together, we make the laws governing New York City. From Woodlawn to Coney Island, every neighborhood in New York City is part of a Council District. There are 51 of these Districts, each represented by an elected Council Member."/>
+    <meta property="og:image"        content="/img/social-img.jpg"/>
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@NYCCouncil" />
+    <meta name="twitter:creator"     content="@NYCCouncil" />
+    <meta name="twitter:title"       content="New York City Council Livestream Only" />
+    <meta name="twitter:description" content="Together, we make the laws governing New York City. From Woodlawn to Coney Island, every neighborhood in New York City is part of a Council District. There are 51 of these Districts, each represented by an elected Council Member."/>
+    <meta name="twitter:image"       content="/img/social-img.jpg" />
     <title>New York City Council Livestream Only</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
@@ -16,7 +28,7 @@
 <body>
   <div id="sticky-wrapper">
     <div data-sticky-container>
-      <header class="site-header sticky"role="header" data-sticky data-margin-top="0" data-sticky-on="small" data-anchor="sticky-wrapper">
+      <header class="site-header sticky" role="header" data-sticky data-margin-top="0" data-sticky-on="small" data-anchor="sticky-wrapper">
         <div class="top-bar" style="background-color: white;">
           <div class="row" style="margin: 0; max-width: 100%; width: 100%;">
             <div class="columns small-12">
@@ -33,16 +45,16 @@
         </div>
         <div id="warning-bar" class="row" style="background-color: #FFF8E1; margin: 0; margin-top:4px; max-width: 100%; width: 100%;">
           <div class="columns small-1" style="position: relative; text-align:center; padding: 10px 0;">
-            <img id="warning-icon" src="/img/warning.svg" style="fill: #F7C304; margin: 0 auto; width: 50px;"/>
+            <img aria-hidden="true" id="warning-icon" src="/img/warning.svg" style="fill: #F7C304; margin: 0 auto; width: 50px;"/>
           </div>
           <div class="columns small-10" style="position: relative; text-align:center; padding: 10px;">
-            <p id="warning-text" style="font-weight: bold; margin-bottom: 0;">The New York City Council website is currently experiencing some technical difficulties.<br/>
+            <p id="warning-text" role="alert" style="font-weight: bold; margin-bottom: 0;">The New York City Council website is currently experiencing some technical difficulties.<br/>
               While we work to get back online, you can still watch hearings that are being live streamed here.<br/>
               You can also use our Legistar system at <a href="https://legistar.council.nyc.gov/" target="_blank">https://legistar.council.nyc.gov/</a>
             </p>
           </div>
           <div class="columns small-1" style="position: relative; text-align:center; padding: 10px 0;">
-            <img id="close-warning" src="/img/close.svg" style="cursor: pointer; position: absolute; right: 10px; top: 5px; width: 20px;"/>
+            <button aria-label="Close"><img id="close-warning" aria-hidden="true" src="/img/close.svg" style="cursor: pointer; position: absolute; right: 10px; top: 5px; width: 20px;"/></button>
           </div>
         </div>
       </header>
